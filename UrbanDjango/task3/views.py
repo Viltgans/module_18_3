@@ -12,7 +12,7 @@ def main_page(request):
         'shop': shop,
         'cart': cart
     }
-    return render(request, 'main_page.html', context)
+    return render(request, 'third_task/main_page.html', context)
 
 def first_additional_page(request):
     title = 'Магазин'
@@ -31,7 +31,7 @@ def first_additional_page(request):
         'game_2': game_2,
         'game_3': game_3,
     }
-    return render(request, 'first_additional_page.html', context)
+    return render(request, 'third_task/first_additional_page.html', context)
 
 def second_additional_page(request):
     title = 'Корзина'
@@ -42,4 +42,4 @@ def second_additional_page(request):
         'text': text,
         'back': back
     }
-    return render(request, 'second_additional_page.html', context)
+    return render(request, 'third_task/second_additional_page.html', context)
